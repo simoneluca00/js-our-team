@@ -4,11 +4,40 @@
     box-sizing: border-box;
 }
 
-h5 {
+body {
+    background-color: rgba(245,245,241,255);
+}
+
+h4 {
     font-family: 'Alice', serif; 
 }
 
 p,
-h4 {
+h3 {
     font-family: 'Montserrat', sans-serif;
+}
+
+div.card {
+    width: 85%;
+    margin: 30px;
+}
+
+/*------------------------------------- MEDIA QUERY PER LE CARDS -------------------------------------*/
+
+@media screen and (min-width: 767.98px) {
+    div.card {
+        width: calc((100% / 2) - 60px );
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    div.card {
+        width: calc((100% / 3) - 60px );
+    }
+}
+
+@media screen and (min-width: 1399.98px) {
+    div.card {
+        width: calc((100% / 4) - 60px );
+    }
 }
